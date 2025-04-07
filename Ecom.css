@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  width: 100vw;
 }
 body{
   background-color: var(--bg-color);
@@ -48,7 +49,6 @@ a:hover {
   align-items:center;
   gap:1px;
 }
-
 .headermenu{
   display:flex;
   align-items: center;
@@ -78,7 +78,6 @@ a:hover {
 #feature:target {
   display: block;
 }
-
 @media (max-width: 600px) {
   .Ecomheader{
   flex-direction: column;
@@ -109,7 +108,7 @@ a:hover {
 }
 .Homepage{
   padding:10% 0 10% 5%;
-  overflow: auto;
+  overflow:hidden;
   background-color:var(--bg-color);
 }
 .Homepage h1{
@@ -245,7 +244,8 @@ a:hover {
   margin:10% 3%;
 }
 .orders h1{
-  padding-top: 5%;
+  margin-top: 10%;
+  padding-bottom: 5%;
   font-size: 2rem;
   align-items: center;
   text-align: center;
@@ -253,6 +253,7 @@ a:hover {
 }
 .orders p{
   font-size: 17px;
+  padding-bottom: 5%;
   align-items: center;
   text-align: center;
 }
@@ -299,4 +300,210 @@ tr{
   }
 }
 
-
+.functions{
+  align-items: center;
+  text-align: center;
+  padding: 3%;
+  margin-top: 10%;
+  background-color: var(--bg-color);
+}
+.functions h1{
+  margin-bottom:5%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.functions p{
+  font-size: 17px;
+  margin-bottom: 5%;
+}
+.functionscontainer{
+  display: block;
+}
+.channel{
+  padding: 10px;
+  background-color:white;
+  margin-bottom:10%;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
+.workflow{
+  padding-top: 5%;
+  border:hidden;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.functionbox1{
+  border: hidden;
+  background-color:var(--bg-color);
+  padding: 5px;
+  border-radius:10px;
+}
+.demorequest a{
+  border: hidden;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+@media (min-width:750px){
+  .functionscontainer{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .channel{
+    width:32%;
+    flex: 1;
+    overflow: hidden;
+  }
+}
+.platform{
+  background-color: hsl(0,0%,90%);
+  padding: 3%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.platformcontainer{
+  display:block;
+}
+.platformbox1{
+  width: 100%;
+  margin-bottom: 15%;
+  padding-bottom: 5%;
+}
+.platformbox1 h1{
+  padding-top: 5%;
+  font-size:2.5rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.platformbox1 p{
+  font-size: 18px;
+  margin-bottom: 15%;
+}
+.platformbox1 a{
+  border: hidden;
+  background-color:var(--main-color);
+  color: var(--bg-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.platformbox2{
+  background-color: hsl(0,0%,90%);
+  width: 100%;
+} 
+.listitems {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 10%;
+  list-style: none;
+}
+.listitems li {
+  box-sizing: border-box;
+  border: hidden;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px 20px;
+  font-size:1rem;
+  align-items:center;
+  text-align: center;
+}
+.more{
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+}
+@media (min-width:750px){
+  .platformcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.pricing{
+  background-color: var(--bg-color);
+  padding-top: 5%;
+  margin: 2%;
+}
+.pricing h1{
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-bottom: 5%;
+}
+.pricingp {
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+.year{
+  background-color: hsl(0,0%,90%);
+  border: 1px solid hsl(0, 0%, 60%);
+  padding: 15px 30px;
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
+}
+.year:hover{
+  background-color: var(--main-color);
+}
+.pricingcontainer{
+  background-color: white;
+  margin-top: 5%;
+  display: block;
+  width: 100%;
+}
+.price{
+  padding: 5% 2%;
+  border:1px solid hsl(0, 0%, 80%);
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 7%;
+  margin-top: 10%;
+  display: block;
+  width: 100%;
+}
+.price h3{
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+.price p{
+  padding-bottom: 5%;
+  margin-top: 5%;
+}
+.price span{
+  font-size: 10px;
+  font-weight: lighter;
+}
+.price a{
+  background-color: hsl(0, 0%, 80%);
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 70%;
+  border-radius: 20px;
+}
+.getstarted{
+  background-color: var(--main-color) !important;
+  color: white;
+}
+@media (min-width:750px){
+   .pricingcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+   }
+}
